@@ -1,0 +1,33 @@
+{
+  "item.magica2.magical_shard": "Magical Shard",
+  "item.magica2.magical_gem": "Magical Gem",
+  "item.magica2.ore_detector": "Ore Detector",
+  "tooltip.magica2.ore_detector.tooltip": "You can find ores with this tool",
+  "item.magica2.grav_apple": "Grav Apple",
+  "item.magica2.magical_pickaxe": "Magical Pickaxe",
+  "item.magica2.sword_test": "Sword Test",
+
+
+  "item.magica2.gravitum_ingot": "Gravitum Ingot",
+  "item.magica2.raw_gravitum": "Raw Gravitum",
+  "item.magica2.gravitum_boots": "Gravitum Boots",
+
+
+  "block.magica2.magical_block": "Magical Block",
+  "block.magica2.magical_ore": "Magical Ore",
+  "block.magica2.deepslate_magical_ore": "Deepslate Magical Ore",
+
+
+  "block.magica2.gravitum_block": "Gravitum Block",
+  "block.magica2.gravitum_ore": "Gravitum Ore",
+  "block.magica2.deepslate_gravitum_ore": "Deepslate Gravitum Ore",
+
+
+  "block.magica2.enhancer": "Enhancer",
+
+
+  "key.category.magica2.magical": "Magical Category",
+  "key.magica2.activate_slow_grav": "Activate Slow Gravity",
+
+  "itemGroup.magic_tab": "Magic Tab"
+}

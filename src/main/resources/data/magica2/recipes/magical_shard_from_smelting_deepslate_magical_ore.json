@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.5,
+  "group": "magical",
+  "ingredient": {
+    "item": "magica2:deepslate_magical_ore"
+  },
+  "result": "magica2:magical_shard"
+}

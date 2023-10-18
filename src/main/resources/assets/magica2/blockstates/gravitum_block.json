@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "magica2:block/gravitum_block"
+    }
+  }
+}

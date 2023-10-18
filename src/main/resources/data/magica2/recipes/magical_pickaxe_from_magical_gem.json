@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    " S ",
+    " S "
+  ],
+  "key": {
+    "#": {
+      "item": "magica2:magical_gem"
+    },
+    "S": {
+      "item": "minecraft:stick"
+  }
+  },
+  "result": {
+    "item": "magica2:magical_pickaxe"
+  }
+}

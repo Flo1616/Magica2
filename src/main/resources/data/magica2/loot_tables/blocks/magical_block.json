@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "magica2:magical_block"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "magica2:blocks/magical_block"
+}

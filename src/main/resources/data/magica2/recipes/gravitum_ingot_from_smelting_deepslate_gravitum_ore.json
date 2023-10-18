@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "group": "gravitum",
+  "ingredient": {
+    "item": "magica2:deepslate_gravitum_ore"
+  },
+  "result": "magica2:gravitum_ingot"
+}

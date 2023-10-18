@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "magica2:gravitum_block"
+    }
+  ],
+  "result": {
+    "item": "magica2:gravitum_ingot",
+    "count": 9
+  }
+}

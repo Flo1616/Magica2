@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "magica2:magical_gem"
+    }
+  },
+  "result": {
+    "item": "magica2:magical_block"
+  }
+}

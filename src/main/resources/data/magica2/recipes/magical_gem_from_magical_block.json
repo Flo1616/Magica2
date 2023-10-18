@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "magica2:magical_block"
+    }
+  ],
+  "result": {
+    "item": "magica2:magical_gem",
+    "count": 9
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "magica2:gravitum_ingot"
+    }
+  },
+  "result": {
+    "item": "magica2:gravitum_block"
+  }
+}

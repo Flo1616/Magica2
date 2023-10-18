@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_magical_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "magica2:magical_ore"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "magica2:magical_shard_from_smelting_magical_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_magical_ore",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "magica2:magical_shard_from_smelting_magical_ore"
+    ]
+  },
+  "sends_telemetry_event": false
+}

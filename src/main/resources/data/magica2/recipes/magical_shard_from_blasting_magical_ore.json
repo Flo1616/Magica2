@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.1,
+  "group": "magical",
+  "ingredient": {
+    "item": "magica2:magical_ore"
+  },
+  "result": "magica2:magical_shard"
+}
