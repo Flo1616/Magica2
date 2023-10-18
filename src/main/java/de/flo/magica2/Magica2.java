@@ -5,6 +5,7 @@ import de.flo.magica2.core.init.Blockinit;
 import de.flo.magica2.core.init.Iteminit;
 import de.flo.magica2.core.init.ModCreativeModTabs;
 import de.flo.magica2.core.init.custom.block.enitiy.ModBlockEntities;
+import de.flo.magica2.core.recipe.ModRecipes;
 import de.flo.magica2.core.screen.EnhancerScreen;
 import de.flo.magica2.core.screen.ModMenuTypes;
 import net.minecraft.client.gui.screens.MenuScreens;
@@ -43,6 +44,8 @@ public class Magica2
 
         ModBlockEntities.register(modEventBus);
         ModMenuTypes.register(modEventBus);
+
+        ModRecipes.register(modEventBus);
 
 
         //modEventBus.addListener(this::commonSetup);
