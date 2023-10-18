@@ -1,19 +1,7 @@
 {
   "variants": {
-    "facing=north": {
+    "": {
       "model": "magica2:block/enhancer"
-    },
-    "facing=south": {
-      "model": "magica2:block/enhancer",
-      "y": 180
-    },
-    "facing=west": {
-      "model": "magica2:block/enhancer",
-      "y": 270
-    },
-    "facing=east": {
-      "model": "magica2:block/enhancer",
-      "y": 90
     }
   }
 }

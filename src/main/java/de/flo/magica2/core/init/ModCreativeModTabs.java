@@ -32,6 +32,7 @@ public class ModCreativeModTabs {
                         pOutput.accept(Blockinit.DEEPSLATE_GRAVITUM_ORE.get());
                         pOutput.accept(Blockinit.GRAVITUM_BLOCK.get());
                         pOutput.accept(Blockinit.ENHANCER.get());
+                        pOutput.accept(Blockinit.TEST_BLOCK.get());
 
                     })
                     .build());

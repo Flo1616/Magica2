@@ -168,7 +168,6 @@ public class EnhancerBlockEntity extends BlockEntity implements MenuProvider {
 
     private boolean hasProgressFinished() {
         return progress >= maxProgress;
-
     }
 
     private void increaseCraftingProgress() {

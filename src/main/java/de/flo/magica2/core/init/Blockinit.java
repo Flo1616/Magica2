@@ -53,6 +53,11 @@ public class Blockinit {
     public static final RegistryObject<Block> ENHANCER = registerBlock("enhancer",
             ()-> new EnhancerBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()));
 
+    public static final RegistryObject<Block> TEST_BLOCK = registerBlock("test_block",
+            ()-> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.NETHERITE_BLOCK)));
+
+
+
 
     private static <T extends Block>RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block)
     {
