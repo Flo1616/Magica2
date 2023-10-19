@@ -12,7 +12,7 @@ public class ModRecipes {
             DeferredRegister.create(ForgeRegistries.RECIPE_SERIALIZERS, Magica2.MODID);
 
     public static final RegistryObject<RecipeSerializer<EnhancerRecipe>> ENHANCER_SERIALIZER =
-            SERIALIZERS.register("enhancer_serializer", () -> EnhancerRecipe.Serializer.INSTANCE);
+            SERIALIZERS.register("enhancing", () -> EnhancerRecipe.Serializer.INSTANCE);
 
 
     public static void register(IEventBus eventBus){

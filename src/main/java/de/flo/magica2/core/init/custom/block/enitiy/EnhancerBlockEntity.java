@@ -127,6 +127,8 @@ public class EnhancerBlockEntity extends BlockEntity implements MenuProvider {
         progress = pTag.getInt("enhancer.progress");
     }
 
+
+
     public void tick(Level pLevel, BlockPos pPos, BlockState pState) {
         if(hasRecipe()) {
             increaseCraftingProgress();

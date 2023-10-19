@@ -53,7 +53,6 @@ public class EnhancerRecipe implements Recipe<SimpleContainer> {
     public ResourceLocation getId() {
         return id;
     }
-
     @Override
     public RecipeSerializer<?> getSerializer() {
         return Serializer.INSTANCE;
