@@ -10,23 +10,19 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.player.Inventory;
 
 public class EnhancerScreen extends AbstractContainerScreen<EnhancerMenu> {
-    private static final ResourceLocation TEXTURE = new ResourceLocation(Magica2.MODID,
-            "textures/gui/enhancer_gui.png");
-
+    private static final ResourceLocation TEXTURE =
+            new ResourceLocation(Magica2.MODID, "textures/gui/enhancer_gui.png");
 
     public EnhancerScreen(EnhancerMenu pMenu, Inventory pPlayerInventory, Component pTitle) {
         super(pMenu, pPlayerInventory, pTitle);
     }
 
-    //Optional:
     @Override
     protected void init() {
         super.init();
         this.inventoryLabelY = 10000;
         this.titleLabelY = 10000;
     }
-
-
 
     @Override
     protected void renderBg(GuiGraphics guiGraphics, float pPartialTick, int pMouseX, int pMouseY) {

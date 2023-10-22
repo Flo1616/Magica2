@@ -18,18 +18,17 @@ public class EnhancerMenu extends AbstractContainerMenu {
     public final EnhancerBlockEntity blockEntity;
     private final Level level;
     private final ContainerData data;
-    public EnhancerMenu(int pContainerId, Inventory inv, FriendlyByteBuf extraData){
-        this(pContainerId, inv, inv.player.level().getBlockEntity(extraData.readBlockPos()), new SimpleContainerData(2));
 
+    public EnhancerMenu(int pContainerId, Inventory inv, FriendlyByteBuf extraData) {
+        this(pContainerId, inv, inv.player.level().getBlockEntity(extraData.readBlockPos()), new SimpleContainerData(2));
     }
 
-    public EnhancerMenu(int pContainerId, Inventory inv, BlockEntity entity, ContainerData data){
+    public EnhancerMenu(int pContainerId, Inventory inv, BlockEntity entity, ContainerData data) {
         super(ModMenuTypes.ENHANCER_MENU.get(), pContainerId);
         checkContainerSize(inv, 2);
         blockEntity = ((EnhancerBlockEntity) entity);
         this.level = inv.player.level();
         this.data = data;
-
 
         addPlayerInventory(inv);
         addPlayerHotbar(inv);
@@ -42,7 +41,6 @@ public class EnhancerMenu extends AbstractContainerMenu {
         addDataSlots(data);
     }
 
-
     public boolean isCrafting() {
         return data.get(0) > 0;
     }
@@ -54,14 +52,6 @@ public class EnhancerMenu extends AbstractContainerMenu {
 
         return maxProgress != 0 && progress != 0 ? progress * progressArrowSize / maxProgress : 0;
     }
-
-
-    @Override
-    public boolean stillValid(Player pPlayer) {
-        return stillValid(ContainerLevelAccess.create(level, blockEntity.getBlockPos()),
-                pPlayer, Blockinit.ENHANCER.get());
-    }
-
 
     // CREDIT GOES TO: diesieben07 | https://github.com/diesieben07/SevenCommons
     // must assign a slot number to each of the slots used by the GUI.
@@ -111,10 +101,13 @@ public class EnhancerMenu extends AbstractContainerMenu {
         }
         sourceSlot.onTake(playerIn, sourceStack);
         return copyOfSourceStack;
-
-
     }
 
+    @Override
+    public boolean stillValid(Player pPlayer) {
+        return stillValid(ContainerLevelAccess.create(level, blockEntity.getBlockPos()),
+                pPlayer, Blockinit.ENHANCER.get());
+    }
 
     private void addPlayerInventory(Inventory playerInventory) {
         for (int i = 0; i < 3; ++i) {

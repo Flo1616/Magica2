@@ -3,6 +3,7 @@ package de.flo.magica2.core.init.custom.block.enitiy;
 import de.flo.magica2.core.init.Iteminit;
 import de.flo.magica2.core.recipe.EnhancerRecipe;
 import de.flo.magica2.core.screen.EnhancerMenu;
+import net.minecraft.client.Minecraft;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;
@@ -32,11 +33,13 @@ import java.util.Optional;
 
 public class EnhancerBlockEntity extends BlockEntity implements MenuProvider {
 
-    private final int INPUT_SLOT = 1;
+    private final int INPUT_SLOT = 0;
     private final int OUTPUT_SLOT = 1;
+    private final int SlotSize = 2;
 
     private LazyOptional<IItemHandler> lazyItemHandler = LazyOptional.empty();
-    private final ItemStackHandler itemHandler = new ItemStackHandler(INPUT_SLOT+OUTPUT_SLOT);
+
+    private final ItemStackHandler itemHandler = new ItemStackHandler(SlotSize);
     public EnhancerBlockEntity(BlockPos pPos, BlockState pBlockState) {
         super(ModBlockEntities.ENHANCER_BE.get(), pPos, pBlockState);
         this.data =  new ContainerData() {
@@ -66,7 +69,7 @@ public class EnhancerBlockEntity extends BlockEntity implements MenuProvider {
 
     protected final ContainerData data;
     private int progress = 0;
-    private int maxProgress = 80;
+    private int maxProgress = 78;
 
 
 
@@ -134,15 +137,17 @@ public class EnhancerBlockEntity extends BlockEntity implements MenuProvider {
             increaseCraftingProgress();
             setChanged(pLevel, pPos, pState);
 
+            //Minecraft.getInstance().player.sendSystemMessage(Component.literal(String.valueOf(progress)));
+
             if(hasProgressFinished()){
                 craftItem();
                 resetProgress();
-            } else {
-                resetProgress();
             }
+        } else {
+            resetProgress();
         }
     }
-
+ 
     private void resetProgress() {
         progress = 0;
     }

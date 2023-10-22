@@ -1,6 +1,8 @@
 package de.flo.magica2.core.event;
 
 import de.flo.magica2.Magica2;
+import de.flo.magica2.core.networking.ModMessages;
+import de.flo.magica2.core.networking.packet.ExampleC2SPacket;
 import de.flo.magica2.core.util.KeyBinding;
 import net.minecraft.client.Minecraft;
 import net.minecraft.network.chat.Component;
@@ -19,6 +21,7 @@ public class ClientEvents {
         public static void onKeyInput(InputEvent.Key event){
             if(KeyBinding.ACTIVATE_SLOW_GRAV.consumeClick())
             {
+                //ModMessages.sendToServer(new ExampleC2SPacket());
                 Minecraft.getInstance().player.sendSystemMessage(Component.literal("Pressed O"));
             }
         }
