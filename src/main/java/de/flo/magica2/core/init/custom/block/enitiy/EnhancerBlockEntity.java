@@ -47,7 +47,7 @@ public class EnhancerBlockEntity extends BlockEntity implements MenuProvider {
             public int get(int pIndex) {
                 return switch (pIndex){
                     case 0 -> EnhancerBlockEntity.this.progress;
-                    case 1 -> EnhancerBlockEntity.this.progress;
+                    case 1 -> EnhancerBlockEntity.this.maxProgress;
                     default -> 0;
                 };
             }
