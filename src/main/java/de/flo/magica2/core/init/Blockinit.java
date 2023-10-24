@@ -2,6 +2,7 @@ package de.flo.magica2.core.init;
 
 import de.flo.magica2.Magica2;
 import de.flo.magica2.core.init.custom.block.EnhancerBlock;
+import de.flo.magica2.core.init.custom.block.MagicalInfuserBlock;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -52,6 +53,12 @@ public class Blockinit {
 
     public static final RegistryObject<Block> ENHANCER = registerBlock("enhancer",
             ()-> new EnhancerBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()));
+
+    public static final RegistryObject<Block> MAGICAL_INFUSER = registerBlock("magical_infuser",
+            ()-> new MagicalInfuserBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()));
+
+
+
 
     public static final RegistryObject<Block> TEST_BLOCK = registerBlock("test_block",
             ()-> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.NETHERITE_BLOCK)));

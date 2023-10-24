@@ -1,0 +1,12 @@
+{
+  "type": "magica2:magical_infusing",
+  "ingredients": [
+    {
+      "item": "magica2:raw_gravitum"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "item": "magica2:gravitum_ingot"
+  }
+}

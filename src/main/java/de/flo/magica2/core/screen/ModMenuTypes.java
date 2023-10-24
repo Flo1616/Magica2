@@ -17,6 +17,9 @@ public class ModMenuTypes {
     public static final RegistryObject<MenuType<EnhancerMenu>> ENHANCER_MENU =
             registerMenuTypes("enhancer_menu",EnhancerMenu::new);
 
+    public static final RegistryObject<MenuType<MagicalInfuserMenu>> MAGICAL_INFUSER_MENU =
+            registerMenuTypes("magical_infuser_menu",MagicalInfuserMenu::new);
+
     private static <T extends AbstractContainerMenu>RegistryObject<MenuType<T>> registerMenuTypes(String name, IContainerFactory<T> factory)
     {
         return MENUS.register(name, () -> IForgeMenuType.create(factory));

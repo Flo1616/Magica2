@@ -8,6 +8,7 @@ import de.flo.magica2.core.init.custom.block.enitiy.ModBlockEntities;
 import de.flo.magica2.core.networking.ModMessages;
 import de.flo.magica2.core.recipe.ModRecipes;
 import de.flo.magica2.core.screen.EnhancerScreen;
+import de.flo.magica2.core.screen.MagicalInfuserScreen;
 import de.flo.magica2.core.screen.ModMenuTypes;
 import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraftforge.api.distmarker.Dist;
@@ -87,6 +88,7 @@ public class Magica2
         public static void onClientSetup(FMLClientSetupEvent event)
         {
             MenuScreens.register(ModMenuTypes.ENHANCER_MENU.get(), EnhancerScreen::new);
+            MenuScreens.register(ModMenuTypes.MAGICAL_INFUSER_MENU.get(), MagicalInfuserScreen::new);
         }
     }
 }

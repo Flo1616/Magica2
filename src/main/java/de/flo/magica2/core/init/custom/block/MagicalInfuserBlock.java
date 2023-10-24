@@ -1,6 +1,5 @@
 package de.flo.magica2.core.init.custom.block;
 
-import de.flo.magica2.core.init.custom.block.enitiy.EnhancerBlockEntity;
 import de.flo.magica2.core.init.custom.block.enitiy.MagicalInfuserBlockEntity;
 import de.flo.magica2.core.init.custom.block.enitiy.ModBlockEntities;
 import net.minecraft.core.BlockPos;
@@ -23,11 +22,11 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraftforge.network.NetworkHooks;
 import org.jetbrains.annotations.Nullable;
 
-public class EnhancerBlock extends BaseEntityBlock {
+public class MagicalInfuserBlock extends BaseEntityBlock {
 
-    public static final VoxelShape SHAPE = Block.box(0, 0, 0, 16, 12, 16);
+    public static final VoxelShape SHAPE = Block.box(0, 0, 0, 16, 15, 16);
 
-    public EnhancerBlock(Properties pProperties) {
+    public MagicalInfuserBlock(Properties pProperties) {
         super(pProperties);
     }
 
@@ -45,8 +44,8 @@ public class EnhancerBlock extends BaseEntityBlock {
     public void onRemove(BlockState pState, Level pLevel, BlockPos pPos, BlockState pNewState, boolean pIsMoving) {
         if (pState.getBlock() != pNewState.getBlock()) {
             BlockEntity blockEntity = pLevel.getBlockEntity(pPos);
-            if (blockEntity instanceof EnhancerBlockEntity) {
-                ((EnhancerBlockEntity) blockEntity).drop();
+            if (blockEntity instanceof MagicalInfuserBlockEntity) {
+                ((MagicalInfuserBlockEntity) blockEntity).drop();
             }
         }
 

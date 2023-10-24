@@ -16,6 +16,12 @@ public class ModBlockEntities {
             BLOCK_ENTITIES.register("enhancer_be", () -> BlockEntityType.Builder.of(EnhancerBlockEntity::new,
                     Blockinit.ENHANCER.get()).build(null));
 
+    public static final RegistryObject<BlockEntityType<MagicalInfuserBlockEntity>> MAGICAL_INFUSER_BE =
+            BLOCK_ENTITIES.register("magical_infuser_be", () -> BlockEntityType.Builder.of(MagicalInfuserBlockEntity::new,
+                    Blockinit.MAGICAL_INFUSER.get()).build(null));
+
+
+
     public static void register(IEventBus eventBus)
     {
         BLOCK_ENTITIES.register(eventBus);

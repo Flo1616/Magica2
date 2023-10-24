@@ -14,6 +14,11 @@ public class ModRecipes {
     public static final RegistryObject<RecipeSerializer<EnhancerRecipe>> ENHANCER_SERIALIZER =
             SERIALIZERS.register("enhancing", () -> EnhancerRecipe.Serializer.INSTANCE);
 
+    public static final RegistryObject<RecipeSerializer<MagicalInfuserRecipe>> MAGICAL_INFUSER_SERIALIZER =
+            SERIALIZERS.register("magical_infusing", () -> MagicalInfuserRecipe.Serializer.INSTANCE);
+
+
+
 
     public static void register(IEventBus eventBus){
         SERIALIZERS.register(eventBus);
