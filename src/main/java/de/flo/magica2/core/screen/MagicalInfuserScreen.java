@@ -35,7 +35,7 @@ public class MagicalInfuserScreen extends AbstractContainerScreen<MagicalInfuser
         guiGraphics.blit(TEXTURE, x, y, 0, 0, imageWidth, imageHeight);
 
         renderProgressArrow(guiGraphics, x, y);
-        //renderPowerBar(guiGraphics, x, y);
+        renderPowerBar(guiGraphics, x, y);
     }
 
     private void renderProgressArrow(GuiGraphics guiGraphics, int x, int y) {

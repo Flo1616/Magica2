@@ -1,8 +1,6 @@
 {
   "item.magica2.magical_shard": "Magical Shard",
   "item.magica2.magical_gem": "Magical Gem",
-  "item.magica2.ore_detector": "Ore Detector",
-  "tooltip.magica2.ore_detector.tooltip": "You can find ores with this tool",
   "item.magica2.grav_apple": "Grav Apple",
   "item.magica2.magical_pickaxe": "Magical Pickaxe",
   "item.magica2.sword_test": "Sword Test",
@@ -11,6 +9,9 @@
   "item.magica2.gravitum_ingot": "Gravitum Ingot",
   "item.magica2.raw_gravitum": "Raw Gravitum",
   "item.magica2.gravitum_boots": "Gravitum Boots",
+
+  "item.magica2.mana_bottle.effect.empty": "Mana Bottle",
+  "item.magica2.levitation_wand": "Levitation Wand",
 
 
   "block.magica2.magical_block": "Magical Block",
@@ -28,6 +29,8 @@
   "block.magica2.test_block": "Test Block",
 
 
+  "tooltip.magica2.mana_bottle.tooltip": "You get 2 Mana by consuming.",
+  "tooltip.magica2.levitation_wand.tooltip": "Let you fly with Mana.",
 
   "key.category.magica2.magical": "Magical Category",
   "key.magica2.activate_slow_grav": "Activate Slow Gravity",

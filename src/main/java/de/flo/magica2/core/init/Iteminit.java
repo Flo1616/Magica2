@@ -1,6 +1,8 @@
 package de.flo.magica2.core.init;
 
 import de.flo.magica2.Magica2;
+import de.flo.magica2.core.init.custom.item.LevitationWandItem;
+import de.flo.magica2.core.init.custom.item.ManaBottleItem;
 import de.flo.magica2.core.init.custom.item.ModArmorMaterials;
 import de.flo.magica2.core.init.custom.item.ModToolTiers;
 import net.minecraft.world.item.ArmorItem;
@@ -47,6 +49,19 @@ public class Iteminit {
     public static final RegistryObject<Item> GRAVITUM_BOOTS = ITEMS.register("gravitum_boots",
             ()-> new ArmorItem(ModArmorMaterials.GRAVITUM, ArmorItem.Type.BOOTS, new Item.Properties()));
 */
+
+
+    public static final RegistryObject<Item> MANA_BOTTLE = ITEMS.register("mana_bottle",
+            ()-> new ManaBottleItem(new Item.Properties()
+                    .stacksTo(16)
+            ));
+
+    public static final RegistryObject<Item> LEVITATION_WAND = ITEMS.register("levitation_wand",
+            ()-> new LevitationWandItem(new Item.Properties()
+                    .stacksTo(1)
+            ));
+
+
 
 
     public static void register(IEventBus eventBus)

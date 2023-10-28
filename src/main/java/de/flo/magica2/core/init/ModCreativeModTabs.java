@@ -27,6 +27,8 @@ public class ModCreativeModTabs {
                         pOutput.accept(Iteminit.GRAVITUM_INGOT.get());
                         pOutput.accept(Iteminit.RAW_GRAVITUM.get());
                         pOutput.accept(Iteminit.SWORD_TEST.get());
+                        pOutput.accept(Iteminit.MANA_BOTTLE.get());
+                        pOutput.accept(Iteminit.LEVITATION_WAND.get());
                         //pOutput.accept(Iteminit.GRAVITUM_BOOTS.get());
                         pOutput.accept(Blockinit.GRAVITUM_ORE.get());
                         pOutput.accept(Blockinit.DEEPSLATE_GRAVITUM_ORE.get());

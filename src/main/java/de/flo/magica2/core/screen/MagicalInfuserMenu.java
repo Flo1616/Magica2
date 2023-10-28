@@ -61,7 +61,7 @@ public class MagicalInfuserMenu extends AbstractContainerMenu {
     public int getScaledPower() {
         int power = this.data.get(2);
         int maxPower = this.data.get(3);
-        int PowerBarSize = 26;
+        int PowerBarSize = 65;
 
         return maxPower != 0 && power != 0 ? power * PowerBarSize / maxPower : 0;
     }

@@ -145,7 +145,7 @@ public class MagicalInfuserBlockEntity extends BlockEntity implements MenuProvid
 
 
     public void tick(Level pLevel, BlockPos pPos, BlockState pState) {
-        if(hasRecipe() && EnoughPower()) {
+        if(hasRecipe()) {
             increaseCraftingProgress();
             setChanged(pLevel, pPos, pState);
 
@@ -182,12 +182,11 @@ public class MagicalInfuserBlockEntity extends BlockEntity implements MenuProvid
     }
 
     private void reducePower() {
-        //power -= 10;
+        power -= 10;
     }
 
     private boolean EnoughPower() {
-        //return power >= 10;
-        return true;
+        return power >= 10;
     }
 
     private void resetProgress() {

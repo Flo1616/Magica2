@@ -1,0 +1,12 @@
+{
+  "type": "magica2:magical_infusing",
+  "ingredients": [
+    {
+      "item": "minecraft:glass_bottle"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "item": "magica2:mana_bottle"
+  }
+}
