@@ -8,6 +8,10 @@
 
   "item.magica2.gravitum_ingot": "Gravitum Ingot",
   "item.magica2.raw_gravitum": "Raw Gravitum",
+
+  "item.magica2.gravitum_helmet": "Gravitum Helmet",
+  "item.magica2.gravitum_chestplate": "Gravitum Chestplate",
+  "item.magica2.gravitum_leggings": "Gravitum Leggings",
   "item.magica2.gravitum_boots": "Gravitum Boots",
 
   "item.magica2.mana_bottle.effect.empty": "Mana Bottle",

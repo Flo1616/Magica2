@@ -45,10 +45,21 @@ public class Iteminit {
     public static final RegistryObject<Item> RAW_GRAVITUM = ITEMS.register("raw_gravitum",
             ()-> new Item(new Item.Properties()));
 
-/*
+
+
+    public static final RegistryObject<Item> GRAVITUM_HELMET = ITEMS.register("gravitum_helmet",
+            ()-> new ArmorItem(ModArmorMaterials.GRAVITUM, ArmorItem.Type.HELMET, new Item.Properties()));
+
+    public static final RegistryObject<Item> GRAVITUM_CHESTPLATE = ITEMS.register("gravitum_chestplate",
+            ()-> new ArmorItem(ModArmorMaterials.GRAVITUM, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+
+    public static final RegistryObject<Item> GRAVITUM_LEGGINGS = ITEMS.register("gravitum_leggings",
+            ()-> new ArmorItem(ModArmorMaterials.GRAVITUM, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+
     public static final RegistryObject<Item> GRAVITUM_BOOTS = ITEMS.register("gravitum_boots",
             ()-> new ArmorItem(ModArmorMaterials.GRAVITUM, ArmorItem.Type.BOOTS, new Item.Properties()));
-*/
+
+
 
 
     public static final RegistryObject<Item> MANA_BOTTLE = ITEMS.register("mana_bottle",
