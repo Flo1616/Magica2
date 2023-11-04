@@ -1,6 +1,8 @@
 package de.flo.magica2.core.event;
 
 import de.flo.magica2.Magica2;
+import de.flo.magica2.core.init.custom.item.ModArmorItem;
+import de.flo.magica2.core.init.custom.item.ModArmorMaterials;
 import de.flo.magica2.core.networking.ModMessages;
 import de.flo.magica2.core.networking.packet.ExampleC2SPacket;
 import de.flo.magica2.core.util.KeyBinding;
@@ -23,6 +25,16 @@ public class ClientEvents {
             {
                 //ModMessages.sendToServer(new ExampleC2SPacket());
                 Minecraft.getInstance().player.sendSystemMessage(Component.literal("Pressed O"));
+
+                if(ModArmorItem.activatedButton)
+                {
+                    ModArmorItem.activatedButton = false;
+                } else if (!ModArmorItem.activatedButton)
+                {
+                    ModArmorItem.activatedButton = true;
+                }
+
+                Minecraft.getInstance().player.sendSystemMessage(Component.literal("State: " + ModArmorItem.activatedButton));
             }
         }
     }

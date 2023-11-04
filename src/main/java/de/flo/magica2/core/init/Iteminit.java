@@ -1,10 +1,7 @@
 package de.flo.magica2.core.init;
 
 import de.flo.magica2.Magica2;
-import de.flo.magica2.core.init.custom.item.LevitationWandItem;
-import de.flo.magica2.core.init.custom.item.ManaBottleItem;
-import de.flo.magica2.core.init.custom.item.ModArmorMaterials;
-import de.flo.magica2.core.init.custom.item.ModToolTiers;
+import de.flo.magica2.core.init.custom.item.*;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.PickaxeItem;
@@ -57,7 +54,7 @@ public class Iteminit {
             ()-> new ArmorItem(ModArmorMaterials.GRAVITUM, ArmorItem.Type.LEGGINGS, new Item.Properties()));
 
     public static final RegistryObject<Item> GRAVITUM_BOOTS = ITEMS.register("gravitum_boots",
-            ()-> new ArmorItem(ModArmorMaterials.GRAVITUM, ArmorItem.Type.BOOTS, new Item.Properties()));
+            ()-> new ModArmorItem(ModArmorMaterials.GRAVITUM, ArmorItem.Type.BOOTS, new Item.Properties()));
 
 
 
